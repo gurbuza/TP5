@@ -42,9 +42,7 @@ public class Triangle
         int cote;
         if ((premierCoté > deuxiemeCoté) && (premierCoté > troisiemeCoté))
         {
-            hypothenus = (premierCoté * premierCoté);
-            cote = ((deuxiemeCoté * deuxiemeCoté) + (troisiemeCoté * troisiemeCoté));
-            if (hypothenus == cote)
+            if ((premierCoté * premierCoté ) == ((deuxiemeCoté * deuxiemeCoté) + (troisiemeCoté * troisiemeCoté)))
             {
                 return true;
             }
@@ -52,9 +50,7 @@ public class Triangle
 
         if ((deuxiemeCoté > troisiemeCoté) && (deuxiemeCoté > premierCoté))
         {
-            hypothenus = (deuxiemeCoté * deuxiemeCoté);
-            cote = ((premierCoté * premierCoté) + (troisiemeCoté * troisiemeCoté));
-            if (hypothenus == cote)
+            if ((deuxiemeCoté * deuxiemeCoté) == ((premierCoté * premierCoté) + (troisiemeCoté * troisiemeCoté)))
             {
                 return true;
             }
@@ -62,9 +58,7 @@ public class Triangle
 
         if ((troisiemeCoté > deuxiemeCoté) && (troisiemeCoté > premierCoté))
         {
-            hypothenus = (troisiemeCoté * troisiemeCoté);
-            cote = ((deuxiemeCoté * deuxiemeCoté) + (premierCoté * premierCoté));
-            if (hypothenus == cote)
+            if ((troisiemeCoté * troisiemeCoté) == ((deuxiemeCoté * deuxiemeCoté) + (premierCoté * premierCoté)))
             {
                 return true;
             }

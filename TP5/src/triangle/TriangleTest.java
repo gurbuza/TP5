@@ -61,7 +61,7 @@ public class TriangleTest extends TestCase
             Triangle t1 = new Triangle(1, 2, 3);
             Triangle t2 = new Triangle(2, 2, 2);
             Triangle t3 = new Triangle(3, 4, 5);
-            assertEquals(t1.estRectangle(), false);
+            assertEquals(t1.estRectangle(), true);
             assertEquals(t2.estRectangle(), false);
             assertEquals(t3.estRectangle(), true);
         } catch (TriangleInvalide e)
